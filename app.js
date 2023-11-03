@@ -23,6 +23,11 @@ const crypto = require('crypto');
 // const secretKey = crypto.randomBytes(22).toString('hex');
 // console.log('JWT_SECRET:', secretKey);
 
+
+app.get("/" , (req, res)=> {
+  res.send("welcome my MARKDOWN APP")
+})
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
